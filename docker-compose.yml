@@ -1,0 +1,53 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    depends_on:
+      - db
+    container_name: cloud-comp-act2_app
+    ports:
+      - "8080:80"
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=development
+    restart: always
+    
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: fastapi_storage
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+  
+  make_migrations:
+    build:
+      context: .
+    image: cloud-comp-act2_app
+    entrypoint: aerich migrate
+    depends_on:
+      - db
+   
+  migrate:
+    build:
+      context: .
+    image: cloud-comp-act2_app
+    entrypoint: aerich upgrade
+    depends_on:
+      - db  
+  
+  format:
+    build: .
+    entrypoint: sh -c "black --config .black . || true && ruff check --fix"
+    volumes:
+      - .:/app  
+   
+volumes:
+  postgres_data:

@@ -1,0 +1,71 @@
+- se ejecuta para ver ultimo commit local: git log -1
+
+commit cfb5a6efb0ff10f381eafe8a0eaf24a6df7b7503 (HEAD -> master, origin/master)
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 21:31:46 2025 +0100
+    actualizar cambios realizados
+
+
+- se ejecuta para ver ultimo commit remoto: git log  origin/master -1
+commit cfb5a6efb0ff10f381eafe8a0eaf24a6df7b7503 (HEAD -> master, origin/master)
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 21:31:46 2025 +0100
+
+    actualizar cambios realizados
+
+------------------------------------------------------------------------
+javi@javi-VirtualBox:~/Escritorio/CLOUD_COMPUTING_SERVICES-main/Cloud-Comp-Act2$ git log
+commit fde8d777d6d5d83f7c0e89bdc0bf942761ec9b69 (HEAD -> master, origin/master)
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 21:44:05 2025 +0100
+
+    actualizar cambios realizados
+
+commit cfb5a6efb0ff10f381eafe8a0eaf24a6df7b7503
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 21:31:46 2025 +0100
+
+    actualizar cambios realizados
+
+commit cc5299a576fa1bcd5567d9701c8e3e2d6199f698
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 20:39:57 2025 +0100
+
+    actualizar cambios realizados
+
+commit a5078add980947af3b1771a787fbeef4f2936f01
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 19:42:03 2025 +0100
+
+    actualizar cambios realizados
+
+commit 693655e2cea59bced2ff07e68f29deeb524ca290
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 19:40:25 2025 +0100
+
+    actualizar cambios realizados
+
+commit 2be11d5e54f8c6e14351a02af56569cd067171d3
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 17:48:18 2025 +0100
+
+    actualizar cambios realizados
+
+commit 241a17573119bf5b2d8d777522cab187b4395e78
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 16:12:36 2025 +0100
+
+    actualizar cambios realizados
+
+commit 5dda79f8171b1aa01147af087278192c2e21816b
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 15:08:30 2025 +0100
+
+    actualizar cambios realizados
+
+commit cdb1a748cad0e32c6973801af92e9000b714587e
+Author: javi <javi@javi-VirtualBox>
+Date:   Mon Mar 17 14:18:23 2025 +0100
+
+    ejercicio_2
+
